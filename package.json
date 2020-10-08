@@ -9,6 +9,9 @@
   },
   "homepage": "https://github.com/awslabs/aws-lex-browser-audio-capture",
   "contributors": [],
+  "config": {
+    "unsafe-perm": true
+  },
   "devDependencies": {
     "chai": "*",
     "coffee-script": "~1.9.1",
@@ -30,7 +33,8 @@
   },
   "dependencies": {
     "aws-sdk": ">=2.48.0",
-    "phantomjs": "^2.1.1"
+    "phantomjs-prebuilt": "^2.1.1",
+    "webworkify": "^1.5.0"
   },
   "main": "lib/lex-audio.js",
   "directories": {
@@ -62,6 +66,7 @@
   "scripts": {
     "test": "grunt test",
     "unit": "grunt test",
-    "distribution": "grunt dist"
+    "distribution": "grunt dist",
+    "set-unsafe-perm": "npm_config_unsafe_perm=true"
   }
 }
