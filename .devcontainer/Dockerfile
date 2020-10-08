@@ -15,3 +15,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # [Optional] Uncomment if you want to install more global node modules
 RUN sudo -u node npm install -g grunt
 ENV npm_config_unsafe_perm=true
+EXPOSE 8080
